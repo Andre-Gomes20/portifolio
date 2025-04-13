@@ -1,0 +1,52 @@
+:root{
+    --dark-mode: #1B1B1B;
+    --dark-mode2: #393939;
+    --orange1: #DB7900;
+    --orange2: #9C6727;
+    --blue1: #0094DB;
+    --blue2: #2D6986;
+    --blue-dark: #222D33;
+}
+html,body{
+    background-color: var(--dark-mode);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, p{
+    padding: 5px;
+    text-align: justify;
+}
+h1{
+    color: var(--orange1);
+}
+h2{
+    color: var(--blue1);
+}
+h3{
+    color: var(--orange2);
+}
+header{
+    background-color: var(--dark-mode2);
+}
+section{
+    padding: 5px;
+}
+section#introducao{
+    
+}
+div#linguagens{
+    display: flex;
+    justify-content: space-evenly;
+}
+div#linguagens > span#items{
+    border: solid 1px var(--orange1);
+}
+section > p{
+    margin: auto;
+    width: 90%;
+}
+footer{
+    background-color: var(--dark-mode2);
+    display: flex;
+    justify-content: space-between;
+}

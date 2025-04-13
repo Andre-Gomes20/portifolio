@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define o estilo base para o HTML e body */
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* Estilos para imagens, vídeos e outros elementos de mídia */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Remove a decoração de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
