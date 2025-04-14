@@ -14,13 +14,15 @@ html,body{
 }
 h1, h2, p{
     padding: 5px;
-    text-align: justify;
 }
 h1{
     color: var(--orange1);
 }
 h2{
     color: var(--blue1);
+}
+h3.blue{
+    color: var(--blue2);
 }
 h3{
     color: var(--orange2);
@@ -45,6 +47,10 @@ nav{
 section{
     padding: 5px;
 }
+section > p{
+    margin: auto;
+    width: 88%;
+}
 section#introducao{
     
 }
@@ -54,15 +60,31 @@ div#linguagens{
 }
 div#linguagens > div.items{
     border: solid 1px var(--orange1);
-    flex: 0 0 50px;
+    flex: 0 0 56px;
+}
+div.items > img{
+    width: 80%;
+    margin: 5px auto 0 auto;
 }
 div.items > span{
     display: block;
     text-align: center;
+    font-weight: bold;
+    color: var(--blue2);
 }
-section > p{
-    margin: auto;
-    width: 90%;
+section#portifolio{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 3%;
+}
+div#projetos{
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid var(--orange1);
+    border-left: none;
+}
+div#projetos > div.content{
+    
 }
 footer{
     background-color: var(--dark-mode2);
