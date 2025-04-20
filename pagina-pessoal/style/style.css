@@ -79,18 +79,47 @@ section#portifolio{
 }
 div#projetos{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     border: 1px solid var(--orange1);
     border-left: none;
 }
 div#projetos > div.content{
-    
+    padding: 5px;
+    margin-left: 5px;
+}
+div#projetos > img{
+    width: 30%;
+}
+section#servicos{
+    padding: 0 3%;
+}
+div.trabalhos{
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid var(--orange1);
+}
+div.trabalhos > div.img{
+    flex: 1 1 130px;
+    background: url(../img/imagem-1.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 footer{
     background-color: var(--dark-mode2);
     display: flex;
     justify-content: space-between;
 }
+footer > div#redes{
+    display: flex;
+    flex-flow: row wrap;
+    width: 65px;
+    justify-content: space-between;
+
+    & .img-rede{
+        flex: 0 0 30px;
+    }
+}
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
