@@ -31,6 +31,11 @@ header{
     background-color: var(--dark-mode2);
     display: flex;
     justify-content: space-between;
+    padding: 2px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 nav{
     display: flex;
@@ -44,15 +49,14 @@ nav{
     color: white;/* Garante que a cor fique visível */
     cursor: pointer;
 }
+main{
+    width: 90%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
 section{
     padding: 5px;
-}
-section > p{
-    margin: auto;
-    width: 88%;
-}
-section#introducao{
-    
 }
 div#linguagens{
     display: flex;
@@ -61,6 +65,7 @@ div#linguagens{
 div#linguagens > div.items{
     border: solid 1px var(--orange1);
     flex: 0 0 56px;
+    padding: 2px;
 }
 div.items > img{
     width: 80%;
@@ -75,7 +80,6 @@ div.items > span{
 section#portifolio{
     display: flex;
     flex-flow: column nowrap;
-    padding: 0 3%;
 }
 div#projetos{
     display: flex;
@@ -89,9 +93,6 @@ div#projetos > div.content{
 }
 div#projetos > img{
     width: 30%;
-}
-section#servicos{
-    padding: 0 3%;
 }
 div.trabalhos{
     display: flex;
@@ -108,13 +109,19 @@ footer{
     background-color: var(--dark-mode2);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 footer > div#redes{
     display: flex;
     flex-flow: row wrap;
     width: 65px;
     justify-content: space-between;
-
+    gap: 5px;
     & .img-rede{
         flex: 0 0 30px;
     }
