@@ -1,0 +1,29 @@
+/* Tablets em modo retrato: até 768px */
+@media (min-width: 600px) and (max-width: 768px) {
+    div#trabalhos-content{
+        flex-flow: row wrap;
+    }
+    div.trabalhos{
+        flex: 1 1 200px;
+    }
+}
+
+/* Telas médias: até 1280px */
+@media (max-width: 1280px) {
+    div#trabalhos-content{
+        flex-flow: row wrap;
+    }
+    div.trabalhos{
+        flex: 1 1 300px;
+    }
+}
+
+/* Telas grandes: até 1440px ou mais */
+@media (min-width: 1281px) {
+    div#trabalhos-content{
+        flex-flow: row wrap;
+    }
+    div.trabalhos{
+        flex: 1 1 400px;
+    }
+}

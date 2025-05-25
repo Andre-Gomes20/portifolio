@@ -20,6 +20,8 @@ h1{
 }
 h2{
     color: var(--blue1);
+    font-size: 2em;
+    text-align: center;
 }
 h3.blue{
     color: var(--blue2);
@@ -54,6 +56,7 @@ main{
     margin: auto;
     padding-top: 70px;
     padding-bottom: 90px;
+    max-width: 1000px;
 }
 section{
     padding: 5px;
@@ -66,6 +69,9 @@ div#linguagens > div.items{
     border: solid 1px var(--orange1);
     flex: 0 0 56px;
     padding: 2px;
+}
+div#linguagens > div.items:hover{
+    box-shadow: 1px 1px 2px var(--orange1);
 }
 div.items > img{
     width: 80%;
@@ -80,30 +86,58 @@ div.items > span{
 section#portifolio{
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
-div#projetos{
+div.projetos{
     display: flex;
     flex-flow: row nowrap;
     border: 1px solid var(--orange1);
+    border-radius: 5px;
     border-left: none;
 }
-div#projetos > div.content{
+div.projetos:hover{
+    background-color: var(--blue-dark);
+    cursor: pointer;
+    box-shadow: 2px 2px 1px var(--orange1);
+}
+div.projetos > div.content{
     padding: 5px;
     margin-left: 5px;
 }
-div#projetos > img{
+div.projetos > img{
     width: 30%;
+        border-radius: 5px 0px 0 5px;
+}
+div#trabalhos-content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 div.trabalhos{
     display: flex;
+    flex: 1 1 400px;
     flex-flow: column nowrap;
     border: 1px solid var(--orange1);
+    border-radius: 5px;
+}
+div.trabalhos:hover{
+    background-color: var(--blue-dark);
+    cursor: pointer;
+    box-shadow: 2px 2px 1px var(--orange1);
 }
 div.trabalhos > div.img{
     flex: 1 1 130px;
     background: url(../img/imagem-1.jpg);
     background-size: cover;
     background-position: center center;
+    border-radius: 5px 5px 0 0;
+}
+div.trabalhos > div.content{
+    padding: 5px;
 }
 footer{
     background-color: var(--dark-mode2);
