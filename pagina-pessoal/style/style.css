@@ -1,4 +1,6 @@
-:root{
+/* style.css */
+:root {
+    /* Paleta de cores */
     --dark-mode: #1B1B1B;
     --dark-mode2: #393939;
     --orange1: #DB7900;
@@ -7,29 +9,36 @@
     --blue2: #2D6986;
     --blue-dark: #222D33;
 }
-html,body{
+
+/* Estilo base do corpo e fundo */
+html, body {
     background-color: var(--dark-mode);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-h1, h2, p{
+
+/* Títulos e parágrafos */
+h1, h2, p {
     padding: 5px;
 }
-h1{
+
+h1 {
     color: var(--orange1);
 }
-h2{
+h2 {
     color: var(--blue1);
     font-size: 2em;
     text-align: center;
 }
-h3.blue{
+h3.blue {
     color: var(--blue2);
 }
-h3{
+h3 {
     color: var(--orange2);
 }
-header{
+
+/* Cabeçalho fixo com menu */
+header {
     background-color: var(--dark-mode2);
     display: flex;
     justify-content: space-between;
@@ -39,7 +48,9 @@ header{
     top: 0;
     left: 0;
 }
-nav{
+
+/* Ícone do menu */
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,124 +58,134 @@ nav{
 }
 .menu {
     font-family: 'Material Symbols Outlined';
-    font-size: 38px !important; /* Pode ser maior que 36px se quiser */
-    color: white;/* Garante que a cor fique visível */
+    font-size: 38px !important;
+    color: white;
     cursor: pointer;
 }
-main{
+
+/* Conteúdo principal */
+main {
     width: 90%;
     margin: auto;
     padding-top: 70px;
     padding-bottom: 90px;
     max-width: 1000px;
 }
-section{
+
+/* Seções */
+section {
     padding: 5px;
 }
-div#linguagens{
+
+/* Linguagens */
+#linguagens {
     display: flex;
     justify-content: space-evenly;
 }
-div#linguagens > div.items{
+#linguagens .items {
     border: solid 1px var(--orange1);
     flex: 0 0 56px;
     padding: 2px;
 }
-div#linguagens > div.items:hover{
+#linguagens .items:hover {
     box-shadow: 1px 1px 2px var(--orange1);
 }
-div.items > img{
+.items img {
     width: 80%;
     margin: 5px auto 0 auto;
 }
-div.items > span{
+.items span {
     display: block;
     text-align: center;
     font-weight: bold;
     color: var(--blue2);
 }
-section#portifolio{
+
+/* Projetos */
+#portifolio {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
+    align-items: center;
 }
-div.projetos{
+.projetos {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
     border: 1px solid var(--orange1);
     border-radius: 5px;
     border-left: none;
 }
-div.projetos:hover{
+.projetos:hover {
     background-color: var(--blue-dark);
     cursor: pointer;
     box-shadow: 2px 2px 1px var(--orange1);
 }
-div.projetos > div.content{
+.projetos > img {
+    width: 30%;
+    border-radius: 5px 0 0 5px;
+}
+.projetos .content {
     padding: 5px;
     margin-left: 5px;
 }
-div.projetos > img{
-    width: 30%;
-        border-radius: 5px 0px 0 5px;
-}
-div#trabalhos-content{
+
+/* Serviços */
+#trabalhos-content {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
+    align-items: center;
 }
-div.trabalhos{
+.trabalhos {
     display: flex;
     flex: 1 1 400px;
-    flex-flow: column nowrap;
+    flex-direction: column;
     border: 1px solid var(--orange1);
     border-radius: 5px;
 }
-div.trabalhos:hover{
+.trabalhos:hover {
     background-color: var(--blue-dark);
     cursor: pointer;
     box-shadow: 2px 2px 1px var(--orange1);
 }
-div.trabalhos > div.img{
+.trabalhos .img {
     flex: 1 1 130px;
     background: url(../img/imagem-1.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     border-radius: 5px 5px 0 0;
 }
-div.trabalhos > div.content{
+.trabalhos .content {
     padding: 5px;
 }
-footer{
+
+/* Rodapé fixo */
+footer {
     background-color: var(--dark-mode2);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
     position: fixed;
-    left: 0;
     bottom: 0;
+    left: 0;
     width: 100%;
 }
-footer > div#redes{
+#redes {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     width: 65px;
-    justify-content: space-between;
     gap: 5px;
-    & .img-rede{
-        flex: 0 0 30px;
-    }
+}
+.img-rede {
+    flex: 0 0 30px;
 }
 
+/* Ícone do Google (ajuste de estilo) */
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
 }

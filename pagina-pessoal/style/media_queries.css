@@ -1,3 +1,4 @@
+/* media_queries.css */
 /* Tablets em modo retrato: até 768px */
 @media (min-width: 600px) and (max-width: 768px) {
     div#trabalhos-content{
