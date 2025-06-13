@@ -18,8 +18,13 @@ html, body {
 }
 
 /* Títulos e parágrafos */
-h1, h2, p {
+h1, h2{
     padding: 5px;
+}
+p {
+    padding: 5px;
+    line-height: 1.35em;
+    text-indent: 1.5em;
 }
 
 h1 {
@@ -88,7 +93,7 @@ section {
     padding: 2px;
 }
 #linguagens .items:hover {
-    box-shadow: 1px 1px 2px var(--orange1);
+    box-shadow: 0px 0px 5px var(--orange1);
 }
 .items img {
     width: 80%;
@@ -118,7 +123,7 @@ section {
 .projetos:hover {
     background-color: var(--blue-dark);
     cursor: pointer;
-    box-shadow: 2px 2px 1px var(--orange1);
+    box-shadow: 0px 0px 7px var(--orange1);
 }
 .projetos > img {
     width: 30%;
@@ -146,7 +151,7 @@ section {
 .trabalhos:hover {
     background-color: var(--blue-dark);
     cursor: pointer;
-    box-shadow: 2px 2px 1px var(--orange1);
+    box-shadow: 0px 0px 7px var(--orange1);
 }
 .trabalhos .img {
     flex: 1 1 130px;
