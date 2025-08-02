@@ -125,9 +125,18 @@ section {
     cursor: pointer;
     box-shadow: 0px 0px 7px var(--orange1);
 }
+.projetos > div.img{
+    flex: 0 0 30%;
+    width: 30%;
+    background: url(../img/entrega.jpg);
+    background-size: cover;
+    background-position: center;
+}
 .projetos > img {
     width: 30%;
     border-radius: 5px 0 0 5px;
+    background-size: auto;
+    background-position: center;
 }
 .projetos .content {
     padding: 5px;
